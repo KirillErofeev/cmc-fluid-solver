@@ -1,0 +1,31 @@
+= Intro =
+
+This wiki contains current project status, active members, scheduling & near plans.
+
+= Active members =
+
+ * Nikolai Sakharnykh
+ * Artem Yatchenko
+
+= Status = 
+
+Working on a test 2D solver
+
+= Local Plans =
+
+ * Write a doc describing a discretization scheme
+ * Implement first version of 2D explicit solver with several iterations
+ * Add results verifying code (using continuity equation)
+ * Test with different parameters on a sample static grid with curved boundaries
+
+= Global Plans =
+
+ * Implement 2D solver 
+ * Integrate into MultiVox
+ * Implement 3D solver
+ * Integrate into MultiVox
+ * Publications
+
+= History =
+
+ * Load & build a grid from a file with model data <font color="green">(done)</font>
