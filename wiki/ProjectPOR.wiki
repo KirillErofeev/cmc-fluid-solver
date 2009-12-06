@@ -13,11 +13,13 @@ Working on a test 2D solver
 
 = Local Plans =
 
- * Write a doc describing a discretization scheme
- * Implement first version of 2D explicit solver with several iterations
- * Add results verifying code (using continuity equation)
- * Test with different parameters on a sample static grid with curved boundaries
+ * Check visualization in MultiVox
+ * Simulate channel flow
+ * Implement 2D ADI solver
+ * Add real metrics
+ * Add dynamic boundaries
 
+ 
 = Global Plans =
 
  * Implement 2D solver 
@@ -29,3 +31,7 @@ Working on a test 2D solver
 = History =
 
  * Load & build a grid from a file with model data <font color="green">(done)</font>
+ * Write a doc describing a discretization scheme <font color="green">(done)</font>
+ * Implement first version of 2D explicit solver with several iterations <font color="green">(done)</font>
+ * Add results verifying code (using continuity equation) <font color="green">(done)</font>
+ * Test with different parameters on a sample static grid with curved boundaries <font color="green">(done)</font>
