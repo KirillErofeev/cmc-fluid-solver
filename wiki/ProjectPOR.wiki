@@ -5,33 +5,22 @@ This wiki contains current project status, active members, scheduling & near pla
 = Active members =
 
  * Nikolai Sakharnykh
- * Artem Yatchenko
 
 = Status = 
 
-Working on a test 2D solver
+Working on 3D ADI solver.
 
 = Local Plans =
 
- * Check visualization in MultiVox
- * Simulate channel flow
- * Implement 2D ADI solver
- * Add real metrics
- * Add dynamic boundaries
-
+ * Finish first version of 3D ADI solver with complex 2D boundaries and constant depth
  
 = Global Plans =
 
- * Implement 2D solver 
- * Integrate into MultiVox
- * Implement 3D solver
- * Integrate into MultiVox
+ * Analyse 3D solver on the White Sea problem
+ * Load variable depth from the sea image file
  * Publications
 
-= History =
+= Done = 
 
- * Load & build a grid from a file with model data <font color="green">(done)</font>
- * Write a doc describing a discretization scheme <font color="green">(done)</font>
- * Implement first version of 2D explicit solver with several iterations <font color="green">(done)</font>
- * Add results verifying code (using continuity equation) <font color="green">(done)</font>
- * Test with different parameters on a sample static grid with curved boundaries <font color="green">(done)</font>
+ * 2D solvers: Explicit, ADI, Stable
+ * Supports dynamic boundaries with no-slip and slip conditions
