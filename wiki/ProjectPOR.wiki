@@ -1,3 +1,5 @@
+#summary Project plans, active members, general info
+
 = Intro =
 
 This wiki contains current project status, active members, scheduling & near plans.
