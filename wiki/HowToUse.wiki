@@ -1,0 +1,41 @@
+#summary Describes how to setup and run 2D/3D fluid solver.
+
+= Setup =
+
+Requirements:
+ * Windows XP/Vista/7
+ * Visual Studio 2008
+ * CUDA toolkit (optional)
+
+Main solutions:
+ * \trunk\src\FluidSolver2D.sln for 2D solver <br>
+ * \trunk\src\FluidSolver3D.sln for 3D solver <br>
+
+After building corresponding solutions you should get all executables in \trunk\bin\Release or \trunk\bin\Debug folders.
+
+= How to Run =
+
+ * 2D solver
+<code> FluidSolver2D <data file> <output file> <config file> </code>
+ {{{<data file>}}} - represents input data file with initial and boundary condifitions <br>
+ {{{<output file>}}} - will contain results in specified format <br>
+ {{{<config file>}}} - used for different parameters of the solver/grids/formats/etc <br>
+ 
+ * 3D solver
+<code> FluidSolver3D <data file> <project name> <config file> {{{[GPU] [align] [transpose]}}} </code>
+ {{{<data file>}}}  - represents input data file with initial and boundary condifitions <br>
+ {{{<project name>}}}  - results will be stored in <project name>{{{_}}}res.txt using specified format, also grid will be stored in <output name>{{{_}}}3d folder <br>
+ {{{<config file>}}}  - used for different parameters of the solver/grids/formats/etc <br>
+ {{{[GPU]}}}  - (optional) use GPU hardware instead of CPU <br>
+ {{{[align]}}}  - (optional) align grid sizes to be multiple of 32 <br>
+ {{{[transpose]}}}  - (optional) transpose data arrays, GPU-specific optimization<br>
+
+= Sample Command Lines =
+
+<code> FluidSolver2D ..\..\data\2D\box_pipe\box_pipe_data.txt output.txt ..\..\data\2D\box_pipe\box_pipe_config.txt </code>
+Runs a 2D solver on CPU for a sample 2D box_pipe test with the corresponding configuration file. <br> <code> FluidSolver3D ..\..\data\3D\box_pipe\box_pipe_data.txt box_pipe_3D ..\..\data\3D\box_pipe\box_pipe_config.txt align GPU transpose</code>
+Runs a 3D solver on GPU for a sample 3D box_pipe test with corresponding configuration file using aligned grids and GPU-only transpose optimization.
+
+
+
+ 
