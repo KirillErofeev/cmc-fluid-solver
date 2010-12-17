@@ -1,7 +1,0 @@
-#summary Current restrictions, issues, progress
-
-= Notes =
-
- * Create segments function assumes that we can have max 1 segment per row. <br> <br> In general it's true for the heart model and any other convex mesh. <br> As we know that we have max 1 segment we can allocate necessary memory for our segments list (on CPU and GPU). <br> Also if we had > 1 segments per row it would likely affect GPU performance due to bad memory access. <br> Workaround would be to sort segments by Z so neighbours will be processed concurrently. 
-
-  
