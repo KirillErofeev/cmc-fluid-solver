@@ -33,8 +33,8 @@ After building corresponding solutions you should get all executables in \trunk\
 = Sample Command Lines =
 
 <code> FluidSolver2D ..\..\data\2D\box_pipe\box_pipe_data.txt output.txt ..\..\data\2D\box_pipe\box_pipe_config.txt </code>
-Runs a 2D solver on CPU for a sample 2D box_pipe test with the corresponding configuration file. <br> <code> FluidSolver3D ..\..\data\3D\box_pipe\box_pipe_data.txt box_pipe_3D ..\..\data\3D\box_pipe\box_pipe_config.txt align GPU transpose</code>
-Runs a 3D solver on GPU for a sample 3D box_pipe test with corresponding configuration file using aligned grids and GPU-only transpose optimization.
+Runs a 2D solver on CPU for a sample 2D box_pipe test with the corresponding configuration file. <br> <code> FluidSolver3D ..\..\data\3D\box_pipe\box_pipe_2D_data.txt box_pipe_2D ..\..\data\3D\box_pipe\box_pipe_2D_config.txt align GPU transpose</code>
+Runs a 3D solver on GPU for a sample box_pipe 2D model extruded along Z direction with corresponding configuration file, using aligned grids and GPU-only transpose optimization.
 
 
 
