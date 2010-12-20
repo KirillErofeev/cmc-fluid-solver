@@ -38,9 +38,9 @@ Runs a 3D solver on GPU for a sample box_pipe 2D model extruded along Z directio
 
 = How to Visualize =
 
-Both 2D and 3D solver can produce output in standard NetCDF text format. <br>
-To save disk storage and be able to open it in some data visualization software you should convert it to binary NetCDF. <br>
-You can use freely available 'ncgen' utility: <br>
+Both 2D and 3D solvers can produce output in standard NetCDF text format. <br>
+To convert output to binary NetCDF you can use freely available 'ncgen' utility: <br>
 <code> ncgen -o output.nc output.txt </code>
+Binary NetCDF is supported in many scientific data visualization programs.
 
  
