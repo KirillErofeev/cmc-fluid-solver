@@ -1,4 +1,4 @@
-#summary Describes how to setup and run 2D/3D fluid solver.
+#summary Describes how to setup and run 2D/3D fluid solver, visualize results.
 
 = Setup =
 
@@ -36,6 +36,11 @@ After building corresponding solutions you should get all executables in \trunk\
 Runs a 2D solver on CPU for a sample 2D box_pipe test with the corresponding configuration file. <br> <code> FluidSolver3D ..\..\data\3D\box_pipe\box_pipe_2D_data.txt box_pipe_2D ..\..\data\3D\box_pipe\box_pipe_2D_config.txt align GPU transpose</code>
 Runs a 3D solver on GPU for a sample box_pipe 2D model extruded along Z direction with corresponding configuration file, using aligned grids and GPU-only transpose optimization.
 
+= How to Visualize =
 
+Both 2D and 3D solver can produce output in standard NetCDF text format. <br>
+To save disk storage and be able to open it in some data visualization software you should convert it to binary NetCDF. <br>
+You can use freely available 'ncgen' utility: <br>
+<code> ncgen -o output.nc output.txt </code>
 
  
