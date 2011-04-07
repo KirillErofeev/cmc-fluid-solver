@@ -33,8 +33,16 @@ After building corresponding solutions you should get all executables in \trunk\
 = Sample Command Lines =
 
 <code> FluidSolver2D ..\..\data\2D\box_pipe\box_pipe_data.txt output.txt ..\..\data\2D\box_pipe\box_pipe_config.txt </code>
-Runs a 2D solver on CPU for a sample 2D box_pipe test with the corresponding configuration file. <br> <code> FluidSolver3D ..\..\data\3D\box_pipe\box_pipe_2D_data.txt box_pipe_2D ..\..\data\3D\box_pipe\box_pipe_2D_config.txt align GPU transpose</code>
-Runs a 3D solver on GPU for a sample box_pipe 2D model extruded along Z direction with corresponding configuration file, using aligned grids and GPU-only transpose optimization.
+Runs a 2D solver on CPU for a sample 2D box_pipe test with the corresponding configuration file. <br> <code> FluidSolver3D ..\..\data\3D\example_tests\box_pipe\box_pipe_2D_data.txt box_pipe_example ..\..\data\3D\example_tests\box_pipe\box_pipe_2D_config.txt align GPU transpose</code>
+Runs a 3D solver on GPU for an example test that uses box pipe 2D model extruded along Z direction with corresponding configuration file, also using aligned grids and GPU-only transpose optimization.
+
+There are a couple of example bat files you can run once you build the project. These batch files test simple scenarios in data folder and usually take just a few minutes to complete:
+<code> trunk\bin\Release\run_examples_CPU.bat
+trunk\bin\Release\run_examples_GPU.bat </code>
+
+Also you can run full large white sea test on CPU/GPU with the following bat files in svn. Please note that this will run much longer since it uses high-res grids and more time steps for better results.
+<code> trunk\bin\Release\run_white_sea_CPU.bat
+trunk\bin\Release\run_white_sea_GPU.bat </code>
 
 = How to Visualize =
 
