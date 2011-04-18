@@ -15,6 +15,8 @@ After building corresponding solutions you should get all executables in \trunk\
 
 = How to Run =
 
+Use Release executables for large tests.
+
  * 2D solver
 <code> FluidSolver2D <data file> <output file> <config file> </code>
  {{{<data file>}}} - represents input data file with initial and boundary condifitions <br>
